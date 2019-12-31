@@ -1,0 +1,44 @@
+rect{
+    stroke: green;
+    background-color: yellow;
+}
+
+line{
+    stroke:rgb(255,0,0);
+    stroke-width:20;
+}
+
+.container{
+    display: flex;
+    padding: 5px;
+}
+
+.graph{
+    flex: 7;
+    padding: 5px;
+}
+
+.analysis{
+    flex: 1;
+    padding: 5px;
+}
+
+#input{
+    padding: 10px;
+    background-color: yellow;
+}
+
+#output{
+    padding: 10px;
+    background-color: lightblue;
+}
+
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+input{
+    width: 50px;
+}

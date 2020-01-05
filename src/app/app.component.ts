@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Robot-Path';
-  inchesPerPixel = (319/640)/12;
+  inchesPerPixel = (319/630)/12;
   startPosition = {x: null, y: null};
   lastPoint = [];
   lines = [];
@@ -56,7 +56,7 @@ export class AppComponent {
     var y1 = line1.y1 - line1.y2;
     var slope1 = x1/y1;
 
-    var x2 = line2.x2 - line2.x1;
+    var x2 = line2.x1 - line2.x2;
     var y2 = line2.y2 - line2.y1;
     var slope2 = x2/y2;
 

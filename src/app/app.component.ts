@@ -54,14 +54,16 @@ export class AppComponent {
   angleOfLine(line1, line2){
     var x1 = line1.x1 - line1.x2;
     var y1 = line1.y1 - line1.y2;
-    var slope1 = x1/y1;
+    var slope1 = y1/x1;
 
     var x2 = line2.x1 - line2.x2;
-    var y2 = line2.y2 - line2.y1;
-    var slope2 = x2/y2;
+    var y2 = line2.y1 - line2.y2;
+    var slope2 = y2/x2;
 
     var angle = (slope1 - slope2)/(1+slope1*slope2);
     
+    console.log(slope1 + " | " + slope2);
+
     return this.radians_to_degrees(Math.atan(angle));
   }
 

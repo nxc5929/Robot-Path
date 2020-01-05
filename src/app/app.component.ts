@@ -17,8 +17,8 @@ export class AppComponent {
   totalDistanceStr: string;
   totalRotationStr: string;
   totalTimeStr: string;
-  robotSpeed: number = 11;
-  rotationSpeed: number = 30;
+  robotSpeed: number = 7.5;
+  rotationSpeed: number = 90;
 
 
   addOnClick(event){

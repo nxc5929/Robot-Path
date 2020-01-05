@@ -60,9 +60,9 @@ export class AppComponent {
     var y2 = line2.y1 - line2.y2;
     var slope2 = y2/x2;
 
-    var angle = (slope1 - slope2)/(1+slope1*slope2);
-    
-    console.log(slope1 + " | " + slope2);
+    if(slope1 != 0 && slope2 != 0){
+      var angle = (slope1 - slope2)/(1+slope1*slope2);
+    }
 
     return this.radians_to_degrees(Math.atan(angle));
   }
